@@ -100,8 +100,19 @@
             color: #800000;
         }
 
+        .blue-blink {
+            animation: blink 1s infinite;
+            color: #00ff00;
+            font-weight: bold;
+        }
+
         .blink {
             animation: blink 1s infinite;
+            color: #ff0000;
+            font-weight: bold;
+        }
+
+        .red {
             color: #ff0000;
             font-weight: bold;
         }
@@ -122,14 +133,20 @@
         }
 
         @keyframes marquee {
-            0% { transform: translateX(100%); }
-            100% { transform: translateX(-100%); }
+            0% { transform: translateX(100vw); }
+            100% { transform: translateX(-101%); }
         }
 
         .flame {
             color: #ff4500;
             font-weight: bold;
             text-shadow: 0 0 10px #ff0000;
+        }
+
+        .blue-flame {
+            color: #00ff00;
+            font-weight: bold;
+            text-shadow: 0 0 10px #00ff00;
         }
 
         .contact-info {
@@ -323,15 +340,15 @@
         
         <div class="contact-info">
             <h3 class="sparkle">🚀 TWO AMAZING OPTIONS! 🚀</h3>
-            <p><strong>Option 1:</strong> Meet us at the START at <span class="blink">6:00 PM</span></p>
-            <p><strong>Option 2:</strong> Meet us at the FINISH to jog to the start at <span class="blink">5:00 PM</span></p>
-            <p>We'll gather outside <span class="flame">Happy Valley</span> at 5:00 to start the climb up the hill if you'd like to join.</p>
+            <p><strong>Option 1:</strong> Meet us at the START at <span class="blue-blink">6:00 PM</span></p>
+            <p><strong>Option 2:</strong> Meet us at the FINISH to jog to the start at <span class="blue-blink">5:00 PM</span></p>
+            <p>We'll gather outside <span class="blue-flame">Happy Valley</span> at 5:00 to start the climb up the hill if you'd like to join.</p>
         </div>
         
         <div class="info-box">
             <h3 class="neon">📞 CONFIRM YOUR ATTENDANCE!</h3>
             <p>If you want to ensure that we wait for you before getting started, send a DM on <span class="flame">WhatsApp</span> or <a href="mailto:brjanes@gmail.com">email</a> to confirm you'll be there.</p>
-            <p class="blink">Let us know if you're joining the 5:00 jog up the hill or meeting at the 6:00 start</p>
+            <p class="red">Let us know if you're joining the 5:00 jog up the hill or meeting at the 6:00 start</p>
         </div>
         
         <div style="text-align: center; margin: 30px 0;">

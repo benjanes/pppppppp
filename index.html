@@ -2,13 +2,14 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🏃‍♂️ 8P 🍻</title>
     <style>
         body {
             background: linear-gradient(45deg, #ff00ff, #00ffff, #ffff00, #ff00ff);
             background-size: 400% 400%;
             animation: rainbow 3s ease infinite;
-            font-family: "Comic Sans MS", cursive, sans-serif;
+            font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", sans-serif;
             margin: 0;
             padding: 20px;
             color: #000080;
@@ -189,6 +190,93 @@
                 #ffff00 20px
             );
             /* animation: marquee 2s linear infinite; */
+        }
+
+        /* Mobile responsive styles */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 15px;
+                border-width: 3px;
+                box-shadow: 5px 5px 0px #000000;
+            }
+
+            .title {
+                font-size: 1.8em;
+                line-height: 1.2;
+                word-wrap: break-word;
+            }
+
+            .subtitle {
+                font-size: 1.2em;
+            }
+
+            .stat {
+                font-size: 1em;
+                line-height: 1.4;
+                word-wrap: break-word;
+            }
+
+            .info-box {
+                padding: 12px;
+                margin: 15px 0;
+            }
+
+            .contact-info {
+                padding: 12px;
+            }
+
+            .marquee {
+                font-size: 0.9em;
+            }
+
+            /* Ensure links are touch-friendly */
+            a {
+                padding: 2px 4px;
+                display: inline-block;
+                /* min-height: 44px; */
+                line-height: 1.4;
+            }
+
+            .sparkle::before,
+            .sparkle::after {
+                font-size: 0.8em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .title {
+                font-size: 1.5em;
+            }
+
+            .subtitle {
+                font-size: 1.1em;
+            }
+
+            .stat {
+                font-size: 0.95em;
+            }
+
+            .info-box {
+                padding: 10px;
+                transform: rotate(0deg);
+            }
+
+            .info-box:nth-child(even) {
+                transform: rotate(0deg);
+            }
+
+            .marquee {
+                font-size: 0.8em;
+                padding: 8px;
+            }
+
+            .contact-info {
+                padding: 10px;
+            }
         }
     </style>
 </head>
